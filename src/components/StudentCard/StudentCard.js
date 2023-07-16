@@ -15,8 +15,7 @@ const StudentCard = ( { student, expanded, onClick }) => {
     console.log(`<StudentCard /> rendered name=${firstName} expanded=${expanded}`);
 
     return (
-        <div className = {styles.StudentList__student}>
-            
+        <div className = {styles.StudentCard}>
             <div className={styles.StudentCard__avatar}>
                 <img src={pic} alt={`${firstName} ${lastName}`} />
             </div>
@@ -42,9 +41,9 @@ const StudentCard = ( { student, expanded, onClick }) => {
                     </ul>
                 )}
             </div>
-            <div className={styles.StudentCard__controls}>
+            {/* <div className={styles.StudentCard__controls}>
                 <button onClick={onClick}>{expanded ? <FaMinus /> : <FaPlus />}</button>
-            </div>
+            </div> */}
         </div>
     )
 }

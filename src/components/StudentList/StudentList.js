@@ -49,7 +49,6 @@ function StudentList({ studentData }) {
         <div className = { styles.contentClassName }>No results for {searchInput}</div>
       )
     } else {
-      console.log(dataToDisplay , "in student list")
       return (
         <div className = { styles.contentClassName }>
           {dataToDisplay.map(student => (
@@ -67,7 +66,7 @@ function StudentList({ studentData }) {
 
   return (
     <div className= { styles.StudentList } >
-      <div className = { styles.StudentList__controls }>
+      {/* <div className = { styles.StudentList__controls }>
         <input 
           type = "text"
           placeholder = "Search by name" 
@@ -76,7 +75,7 @@ function StudentList({ studentData }) {
         />
       <button onClick = { handleExpandAll }>Expand All</button>
       <button onClick = { handleCollapseAll }>Collapse All</button>
-      </div>
+      </div> */}
       <div>
         { renderContent() }
       </div>

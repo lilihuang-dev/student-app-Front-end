@@ -1,3 +1,7 @@
-/* .studentList {
-    color: red;
-} */
+.StudentList {
+    width: 60vw;
+    height: 80vh;
+    background-color: #fff;
+    overflow-x: scroll;
+    border-radius: 10px;
+}

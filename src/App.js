@@ -37,7 +37,7 @@ function App() {
     };
     fetchData();
   }, []);
-  console.log(studentData)
+
   const renderContent = () => {
     if (loading) {
       return <Loading />;
@@ -51,7 +51,7 @@ function App() {
   console.log("<App /> rendered!")
 
   return (
-    <div className={styles.app}>
+    <div className={styles.App}>
       { renderContent() }
     </div>
   );
